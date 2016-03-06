@@ -26,12 +26,19 @@
 
     <ui:with field='i18n' type='org.traccar.web.client.i18n.Messages' />
 
-    <container:VerticalLayoutContainer ui:field="contentPanel">
+    <ui:style>
+        .tabBody {
+            /*padding: 5px;*/
+            background-color: rgb(34, 45, 50) !important;
+        }
+    </ui:style>
+
+    <container:VerticalLayoutContainer ui:field="contentPanel" addStyleNames="{style.tabBody}">
         <container:child layoutData="{layoutData}">
             <grid:Grid ui:field="grid" store="{positionStore}" cm="{columnModel}" view="{view}" stateful="true" stateId="archiveGrid" />
         </container:child>
-        <container:child layoutData="{toolBarRowData}">
-            <toolbar:ToolBar>
+        <container:child layoutData="{toolBarRowData}" >
+            <toolbar:ToolBar addStyleNames="{style.tabBody}" >
                 <toolbar:FillToolItem />
                 <toolbar:LabelToolItem label="{i18n.distance}:" />
                 <toolbar:LabelToolItem ui:field="totalDistance" label="0" width="80" />

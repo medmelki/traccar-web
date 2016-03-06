@@ -34,6 +34,7 @@
   <ui:style>
     .tabBody {
         padding: 5px;
+        background-color: rgb(34, 45, 50) !important;
     }
   </ui:style>
 

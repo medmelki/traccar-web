@@ -10,7 +10,7 @@
 
   <ui:style>
     .app-menu {
-      background-color: #157FCC !important;
+      background-color: rgb(60, 141, 188) !important;
       background-image: none !important;
     }
   </ui:style>

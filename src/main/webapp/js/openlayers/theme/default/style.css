@@ -514,3 +514,69 @@ a.olControlZoomOut {
 img.olTileImage {
     max-width: none;
 }
+
+/*.com-sencha-gxt-theme-neptune-client-base-panel-Css3ContentPanelAppearance-Css3ContentPanelStyle-panel {*/
+    /*outline : 0 none;*/
+    /*border-style : none;*/
+    /*border-width : 0px 0px 0px 0px;*/
+    /*border-color : #000000;*/
+/*}*/
+.com-sencha-gxt-theme-neptune-client-base-panel-Css3ContentPanelAppearance-Css3ContentPanelStyle-body {
+    background-color: rgb(34, 45, 50) !important;
+    border : none;
+    position : relative;
+    overflow : hidden;
+}
+.com-sencha-gxt-theme-neptune-client-base-panel-Css3ContentPanelAppearance-Css3ContentPanelStyle-header {
+    position : relative;
+    background : -webkit-linear-gradient(top, rgb(60, 141, 188) 0%, rgb(60, 141, 188) 100%);
+    background : -o-linear-gradient(top, rgb(60, 141, 188) 0%, rgb(60, 141, 188) 100%);
+    background : -ms-linear-gradient(top, rgb(60, 141, 188) 0%, rgb(60, 141, 188) 100%);
+    background : linear-gradient(to bottom, rgb(60, 141, 188) 0%, rgb(60, 141, 188) 100%);
+    padding : 10px 10px 10px 10px;
+}
+/*.com-sencha-gxt-theme-neptune-client-base-panel-Css3ContentPanelAppearance-Css3ContentPanelStyle-footer {*/
+    /*position : relative;*/
+/*}*/
+
+.com-sencha-gxt-theme-neptune-client-base-grid-Css3GridAppearance-GridStyle-scroller {
+    overflow: auto;
+    zoom: 1;
+    position: relative;
+    background-color: rgb(34, 45, 50) !important;
+}
+
+.com-sencha-gxt-theme-neptune-client-base-tabs-Css3TabPanelBottomAppearance-Css3TabPanelBottomStyle-tabStripWrap {
+    background: -webkit-linear-gradient(bottom, rgb(60, 141, 188) 0%, rgb(60, 141, 188) 100%);
+    background: -o-linear-gradient(bottom, rgb(60, 141, 188), rgb(60, 141, 188)100%);
+    background: -ms-linear-gradient(bottom, rgb(60, 141, 188) 0%, rgb(60, 141, 188) 100%);
+    background: linear-gradient(to top, rgb(60, 141, 188) 0%, rgb(60, 141, 188) 100%);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 0px;
+}
+
+.com-sencha-gxt-theme-neptune-client-base-container-Css3BorderLayoutAppearance-Css3BorderLayoutStyle-container {
+    background-color: rgb(34, 45, 50) !important;
+}
+
+.com-sencha-gxt-theme-neptune-client-base-window-Css3WindowAppearance-Css3WindowStyle-panel {
+    border-radius: 4px;
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    /*background-color: rgb(34, 45, 50);*/
+    border-color: rgb(60, 141, 188);
+    outline: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+.com-sencha-gxt-theme-neptune-client-base-window-Css3WindowAppearance-Css3WindowStyle-header {
+    background: -webkit-linear-gradient(top, rgb(60, 141, 188) 0%, rgb(60, 141, 188) 100%);
+    background: -o-linear-gradient(top, rgb(60, 141, 188) 0%, rgb(60, 141, 188) 100%);
+    background: -ms-linear-gradient(top, rgb(60, 141, 188) 0%, rgb(60, 141, 188) 100%);
+    background: linear-gradient(to bottom, rgb(60, 141, 188) 0%, rgb(60, 141, 188) 100%);
+    padding: 6px 10px 10px 10px;
+}
+

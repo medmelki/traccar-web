@@ -18,11 +18,20 @@
 
     <ui:with field='i18n' type='org.traccar.web.client.i18n.Messages' />
 
-    <gxt:ContentPanel ui:field="contentPanel" headingText="{i18n.archive}">
-        <container:VerticalLayoutContainer>
+    <ui:style>
+        .tabBody {
+            background-color: rgb(34, 45, 50) !important;
+        }
+        .toolbar {
+            background-color: rgb(60, 141, 188) !important;
+        }
+    </ui:style>
+
+    <gxt:ContentPanel ui:field="contentPanel" headingText="{i18n.archive}" addStyleNames="{style.tabBody}">
+        <container:VerticalLayoutContainer addStyleNames="{style.tabBody}">
 
             <container:child layoutData="{toolBarRowData}">
-                <toolbar:ToolBar>
+                <toolbar:ToolBar addStyleNames="{style.toolbar}">
 
                     <toolbar:LabelToolItem label="{i18n.device}:" />
                     <form:ComboBox ui:field="deviceCombo" editable="false" triggerAction="ALL" />

@@ -1,24 +1,26 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <script type="text/javascript" src="js/isMobile.min.js"></script>
     <script type="text/javascript">
-      function getParameterByName(name) {
-        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
-        results = regex.exec(location.search);
-        return results === null ? null : decodeURIComponent(results[1].replace(/\+/g, " "));
-      }
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+            results = regex.exec(location.search);
+            return results === null ? null : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
 
-      if (isMobile.any && getParameterByName('nomobileredirect') === null) {
-        window.location = 'm/';
-      }
+        if (isMobile.any && getParameterByName('nomobileredirect') === null) {
+            window.location = 'm/';
+        }
     </script>
 
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Traccar</title>
-
-    <link rel="stylesheet" type="text/css" href="traccar/reset.css" />
+    <title>Arastu</title>
+    <link rel="icon"
+          type="image/png"
+          href="arastu.png">
+    <link rel="stylesheet" type="text/css" href="traccar/reset.css"/>
 
     <script src="js/openlayers/OpenLayers.js"></script>
     <script src="//www.openstreetmap.org/openlayers/OpenStreetMap.js"></script>
@@ -28,40 +30,54 @@
     <script type="text/javascript" src="js/stamen/tile.stamen.js"></script>
     <script type="text/javascript" src="traccar/traccar.nocache.js"></script>
 
-    <!-- Attribution position workaround -->    
+    <!-- Attribution position workaround -->
     <style type="text/css">
-      .olControlAttribution { bottom: 5px !important; }
-      .olImageLoadError {
-          /* Some layers (e.g. seamark, sports) only render tiles where
-           * an object exists. Unknown tiles are displayed in pink by
-           * default. We change this behaviour by hiding these tiles.
-           */
-          display: none !important;
-      }
+        .olControlAttribution {
+            bottom: 5px !important;
+        }
+
+        .olImageLoadError {
+            /* Some layers (e.g. seamark, sports) only render tiles where
+             * an object exists. Unknown tiles are displayed in pink by
+             * default. We change this behaviour by hiding these tiles.
+             */
+            display: none !important;
+        }
     </style>
 
     <!-- loading style -->
     <style type="text/css">
-      #loading {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        text-align: center;
-        margin-left: -100px;
-      }
+        #loading {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            margin-left: -100px;
+        }
     </style>
-  </head>
-  <body>
-    <noscript>
-      <div>
+</head>
+<body>
+<noscript>
+    <div>
         Your web browser must have JavaScript enabled
         in order for this application to display correctly.
-      </div>
-    </noscript>
-    <div id="loading">
-      <p id="loading-text">Loading application...</p>
-      <img src="img/ajax-loader.gif" />
     </div>
-  </body>
+</noscript>
+<div id="loading">
+    <p id="loading-text">Loading application...</p>
+    <img src="img/ajax-loader.gif"/>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $('.com-sencha-gxt-theme-neptune-client-base-panel-Css3ContentPanelAppearance-Css3ContentPanelStyle-header').each(function (i) {
+            $(this).css('background', 'rgb(60, 141, 188) !important');
+            $(this).text('test');
+        });
+    });
+
+</script>
+</body>
 </html>
